@@ -1,3 +1,23 @@
 spring:
+
   application:
     name: startup
+
+  datasource:
+
+    url: jdbc:postgresql://localhost:5432/one_database?currentSchema=db_test&options=-c%20TimeZone=America/Sao_Paulo
+    username: app_user
+    password: "@Java198106"
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+logging:
+  root: WARN
+  com.alexdev: INFO
