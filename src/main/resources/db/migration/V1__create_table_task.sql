@@ -1,0 +1,7 @@
+CREATE TABLE task
+(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    task VARCHAR(100) NOT NULL,
+    moment TIMESTAMP NOT NULL,
+    status INTEGER
+);
